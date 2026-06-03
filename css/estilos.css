@@ -1,0 +1,241 @@
+/* archivo estilos.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #020617, #0f172a, #1e3a8a);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Separador principal */
+.separador{
+    width: 430px;
+    min-height: 760px;
+    background: #f8fafc;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    border: 2px solid #38bdf8;
+}
+
+/* Franja lateral */
+.panel-izquierdo{
+    width: 78px;
+    background: linear-gradient(180deg, #0f172a, #1d4ed8, #38bdf8);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo{
+    position: absolute;
+    top: 25px;
+    width: 38px;
+    height: 38px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.vertical{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 4px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 15px;
+}
+
+/* Contenido */
+.contenido{
+    width: 100%;
+    padding: 35px 28px;
+    text-align: center;
+}
+
+.etiqueta{
+    display: inline-block;
+    background: #0f172a;
+    color: #38bdf8;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 52px;
+    color: #0f172a;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 30px;
+    color: #1d4ed8;
+    margin-bottom: 5px;
+}
+
+h3{
+    font-size: 15px;
+    color: #475569;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.linea{
+    width: 180px;
+    height: 5px;
+    background: linear-gradient(to right, #38bdf8, #1d4ed8, #0f172a);
+    border-radius: 30px;
+    margin: 0 auto 22px auto;
+}
+
+/* Mockup tipo ventana de código */
+.mockup{
+    background: #020617;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: 22px;
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.25);
+}
+
+.barra-superior{
+    height: 35px;
+    background: #1e293b;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    gap: 8px;
+}
+
+.barra-superior span{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    display: block;
+}
+
+.barra-superior span:nth-child(1){
+    background: #ef4444;
+}
+
+.barra-superior span:nth-child(2){
+    background: #facc15;
+}
+
+.barra-superior span:nth-child(3){
+    background: #22c55e;
+}
+
+.codigo{
+    padding: 18px;
+    color: #e5e7eb;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.azul{
+    color: #38bdf8;
+}
+
+.morado{
+    color: #c084fc;
+}
+
+.verde{
+    color: #86efac;
+}
+
+/* Datos */
+.datos{
+    background: white;
+    border-left: 5px solid #1d4ed8;
+    border-radius: 14px;
+    padding: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+}
+
+.datos p{
+    color: #334155;
+    font-size: 14px;
+    margin: 9px 0;
+}
+
+/* Temas */
+.temas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+    margin-bottom: 20px;
+}
+
+.temas div{
+    background: #e0f2fe;
+    color: #0f172a;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Frase */
+.frase{
+    color: #1e3a8a;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+button{
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #0f172a;
+    transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 520px){
+
+    .separador{
+        width: 95%;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .contenido{
+        padding: 30px 20px;
+    }
+  }
